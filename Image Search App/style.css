@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS for styling the header */
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  height: 80px;
+  background-color: #333; /* Background color for the header */
+  color: white; /* Text color */
+  margin: 0; /* Remove margin to prevent unwanted spacing */
+  text-decoration: none;
+}
+#a:visited {
+  text-decoration: none;
+}
+
+/* Remove underline for active links (when clicked) */
+#a:active {
+  text-decoration: none;
+}
+
+/* Remove underline for focused links (when selected with keyboard) */
+#a:focus {
+  text-decoration: none;
+}
+
+form {
+  text-align: center;
+  margin: 25px;
+  padding: 10px;
+}
+
+#search-input {
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 5px;
+  height: 2.2rem;
+  width: 20rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+#search-btn {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  height: 3.1rem;
+  width: 5rem;
+  margin: 5px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+#search-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-result {
+  flex-basis: calc(25% - 30px); /* 25% width with a little spacing */
+  /* margin: 10px; */
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  width: 100vw;
+  background-color: white;
+  border: none; /* Keep this line to remove the border */
+
+  /* padding: 10px; Adjust padding as needed */
+  border-radius: 4px;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.search-result:hover {
+  opacity: 0.7;
+}
+
+.img {
+  height: 15rem;
+  width: 20rem;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+.search-result:hover img {
+  transition: opacity 0.1s ease-in-out;
+}
+
+.details {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#show-more-btn {
+  cursor: pointer;
+  margin: 80px auto; /* Center horizontally */
+  text-align: center;
+  background-color: #007fff;
+  color: white;
+  border-radius: 4px;
+  height: 35px;
+  width: 90px;
+  border: none;
+  display: block;
+  /* button will be seen only if user types something */
+  display: none;
+}
+#back-btn {
+  cursor: pointer;
+  margin: 0px auto; /* Center horizontally */
+  text-align: center;
+  background-color: green;
+  color: white;
+  border-radius: 4px;
+  height: 35px;
+  width: 90px;
+  border: none;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .search-results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+/* CSS for styling the footer */
+footer {
+  text-align: center;
+  background-color: #333; /* Background color for the footer */
+  color: white; /* Text color */
+  padding: 10px 0; /* Add some padding for spacing */
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.heart {
+  color: red; /* Color for the heart emoji */
+  font-size: 1.2em; /* Adjust the font size as needed */
+  vertical-align: middle; /* Vertically align the heart emoji with the text */
+}
+
+a {
+  color: white; /* Link text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the link text bold */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
